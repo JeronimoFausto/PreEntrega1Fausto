@@ -1,12 +1,12 @@
-let username = "coderhouse"
-let usernameIngresado = prompt ("Ingrese su username")
+let usernameIngresado = prompt ("Ingrese su nombre, luego su apellido y al finalizar presione ESC para ingresar.")
 
-if (usernameIngresado == username){
-    console.log ("Bienvenido")
+let texto = "BIENVENIDO "
+
+while (usernameIngresado != "ESC" && usernameIngresado != "esc") {
+    texto += usernameIngresado + " "
+    usernameIngresado= prompt ("Ingrese su nombre, luego su apellido y al finalizar presione ESC para ingresar.")
 }
-else {
-    console.log ("usuario incorrecto")
-}
+alert(texto)
 
 let nota = prompt ("Que nota te sacaste?")
 if (nota <= 2) {
@@ -22,7 +22,5 @@ if (nota <= 2) {
     }
 
 else{
-    console.log ("noat erronea")
+    console.log ("nota erronea")
 }
-
-
