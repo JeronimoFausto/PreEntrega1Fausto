@@ -21,6 +21,42 @@ if (nota <= 2) {
         console.log ("La nota es perfecta, no hace falta recuperar")
     }
 
-else{
-    console.log ("nota erronea")
-}
+function TuNota (calificacion, lugar, fecha){
+    this.calificacion = calificacion;
+    this.lugar = lugar;
+    this.fecha = fecha;
+};
+
+let comoSigo = prompt ("ahora que sabes tu nota, escribila para saber donde y cuando recuperar la materia")
+
+var insuficiente = new TuNota ("Insuficiente", "Facultad de Derecho", 20-12);
+var regular = new TuNota ("Regular", "Facultad de Ciencias Exactas", 23-12);
+var aprobado = new TuNota ("Aprobado", "No hace falta recuperar", "-");
+var muyBien = new TuNota ("Aprobado", "No hace falta recuperar", "-");
+var perfecto = new TuNota ("Aprobado", "No hace falta recuperar", "-");
+
+if (comoSigo = "insuficiente"){
+    console.log (insuficiente)
+    } else if (ComoSigo = "regular"){
+        console.log (regular)
+    } else if (ComoSigo = "Aprobado"){
+        console.log (aprobado)
+    } else if (ComoSigo = "Muy Bien"){
+        console.log (muybien)
+    } else if (ComoSigo = "perfecto"){
+        console.log (perfecto)
+    }
+    else {
+        console.log ("Error")
+    }
+
+
+const Titulo = document.querySelector("h1").textContent="Asignacion de notas."
+
+const Subtitle = document.querySelector("h3")
+Subtitle.remove
+
+let agregado = document.createElement("p")
+agregado.innerHTML= "Parrafo de demostracion"
+document.body.appendChild(agregado)
+
